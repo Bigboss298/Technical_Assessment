@@ -1,0 +1,185 @@
+.searchBox{
+  width: 100vw;
+  height: 15vh;
+  /* background-color: blue; */
+  display: flex;
+  place-items: center;
+  place-content: center;
+  border-bottom: 2px solid grey;
+}
+.searchInput{
+  width: 20vw;
+  height: 3.5em;
+  margin-right: 5px;
+}
+.submitButton{
+  width: 5vw;
+  height: 2.6em;
+  margin-left: 5px;
+  color: grey;
+  font-size: 18px;
+}
+.movieCard{
+  background-color: white;
+  width: 80%;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+.movieCard:hover {
+  transform: scale(0.95);
+  transition: transform 0.3s ease; 
+  }
+
+.resultContainer{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  width: 100vw;
+  height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.subMovieCard{
+  display: flex;
+  gap: 30px;
+}
+.nav{
+  width: 100vw;
+  height: 7vh;
+  background-color: red;
+  display: flex;
+  place-content: center;
+  place-content: space-between;
+}
+.brand{
+  max-height: 7vh;
+  max-width: 20vw;
+  padding-left: 30px;
+  cursor: pointer;
+  place-items: center;
+  place-content: center;
+}
+.brandName{
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+
+}
+ul{
+  width: 30vw;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  gap: 50px;
+ 
+}
+.link{
+  text-decoration: none;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+}
+.history{
+  display: flex;
+  place-content: space-between;
+}
+.hr{
+  width: 95%;
+}
+.historyTemplate{
+  margin-top: 10%;
+  width: 100vw;
+ text-align: center;
+}
+.historyTemplate1{
+  margin-top: 5%;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  place-content: center;
+  place-items: start;
+}
+.historyTemplate2{
+  border-radius: 10px;
+  background-color: #ffffff;
+  width: 50%;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.singleMovie{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  place-content: center;
+}
+.singleMovieBox{
+  background-color: #ffffff;
+  width: 70%;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+}
+.singlecontainer{
+  display: flex;
+  place-content: space-between;
+}
+.singleText{
+  width: 50%;
+  height: 100%;
+}
+.singleImage{
+  width: 40%;
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  place-content: center;
+  place-items: center
+}
+
+@media (max-width: 767px) {
+  ul{
+    width: 50vw;
+  }
+  .brandName{
+    font-size: large;
+  }
+  .searchInput{
+    width: 50%;
+    height: 2.5em;
+    /* margin-right: 5px; */
+  }
+  .submitButton{
+    width: 25%;
+    height: 2.1em;
+    margin-left: 5px;
+    color: grey;
+    font-size: 15px;
+  }
+  .singlecontainer{
+    display: flex;
+    flex-direction: column;
+  }
+  .singleMovie{
+    width: 100vw;
+    height: fit-content;
+  }
+  .singleText{
+    width: 100%;
+    height: 350px;
+    overflow: scroll;
+  }
+  .singleImage{
+    width: 350px;
+    height: 200px;
+  }
+  .singleMovieBox{
+    width: 90%;
+  }
+}

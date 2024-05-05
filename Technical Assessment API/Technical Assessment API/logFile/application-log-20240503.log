@@ -1,0 +1,72 @@
+2024-05-03 23:31:51.398 -07:00  INF  Now listening on: https://localhost:7272
+2024-05-03 23:31:51.467 -07:00  INF  Now listening on: http://localhost:5230
+2024-05-03 23:31:51.471 -07:00  INF  Application started. Press Ctrl+C to shut down.
+2024-05-03 23:31:51.471 -07:00  INF  Hosting environment: Development
+2024-05-03 23:31:51.471 -07:00  INF  Content root path: C:\Users\Abdullah\Desktop\Technical Assessment API\Technical Assessment API
+2024-05-03 23:31:53.823 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/swagger/index.html - -
+2024-05-03 23:31:54.642 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/swagger/index.html - - - 200 - text/html;charset=utf-8 827.6297ms
+2024-05-03 23:31:54.695 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/_framework/aspnetcore-browser-refresh.js - -
+2024-05-03 23:31:54.695 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/_vs/browserLink - -
+2024-05-03 23:31:54.712 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 17.0472ms
+2024-05-03 23:31:54.806 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 110.7331ms
+2024-05-03 23:31:55.216 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/swagger/v1/swagger.json - -
+2024-05-03 23:31:55.504 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 288.9665ms
+2024-05-03 23:32:09.900 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=haven - -
+2024-05-03 23:32:09.926 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-03 23:32:09.976 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-03 23:32:10.627 -07:00  INF  Executing action method Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) - Validation state: "Valid"
+2024-05-03 23:32:52.480 -07:00  INF  Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-03 23:33:06.153 -07:00  INF  Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p0, @p1, @p2);
+2024-05-03 23:33:21.162 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=haven&apikey=776a5d6f
+2024-05-03 23:33:21.165 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=haven&apikey=776a5d6f
+2024-05-03 23:33:25.230 -07:00  INF  Received HTTP response headers after 4057.8035ms - 200
+2024-05-03 23:33:25.231 -07:00  INF  End processing HTTP request after 4075.6519ms - 200
+2024-05-03 23:34:20.309 -07:00  INF  Executed action method Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 129674.0307ms.
+2024-05-03 23:34:20.321 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-03 23:34:20.357 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 130361.1007ms
+2024-05-03 23:34:20.358 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-03 23:34:20.378 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=haven - - - 200 - application/json;+charset=utf-8 130477.8273ms
+2024-05-03 23:35:18.757 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1519931 - -
+2024-05-03 23:35:18.783 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-03 23:35:18.791 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-03 23:35:18.853 -07:00  INF  Executing action method Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) - Validation state: "Valid"
+2024-05-03 23:35:38.959 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt1519931&apikey=776a5d6f
+2024-05-03 23:35:38.959 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt1519931&apikey=776a5d6f
+2024-05-03 23:35:42.660 -07:00  INF  Received HTTP response headers after 3700.7784ms - 200
+2024-05-03 23:35:42.661 -07:00  INF  End processing HTTP request after 3702.0465ms - 200
+2024-05-03 23:36:32.059 -07:00  INF  Executed action method Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 73202.459ms.
+2024-05-03 23:36:32.192 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.MovieDto'.
+2024-05-03 23:36:32.216 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 73424.6215ms
+2024-05-03 23:36:32.236 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-03 23:36:32.238 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1519931 - - - 200 - application/json;+charset=utf-8 73481.8856ms
+2024-05-03 23:47:57.649 -07:00  INF  Now listening on: https://localhost:7272
+2024-05-03 23:47:57.917 -07:00  INF  Now listening on: http://localhost:5230
+2024-05-03 23:47:57.921 -07:00  INF  Application started. Press Ctrl+C to shut down.
+2024-05-03 23:47:57.922 -07:00  INF  Hosting environment: Development
+2024-05-03 23:47:57.922 -07:00  INF  Content root path: C:\Users\Abdullah\Desktop\Technical Assessment API\Technical Assessment API
+2024-05-03 23:47:58.482 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/swagger/index.html - -
+2024-05-03 23:47:59.356 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/_framework/aspnetcore-browser-refresh.js - -
+2024-05-03 23:47:59.356 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/_vs/browserLink - -
+2024-05-03 23:47:59.382 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/swagger/index.html - - - 200 - text/html;charset=utf-8 903.9215ms
+2024-05-03 23:47:59.425 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 67.7798ms
+2024-05-03 23:47:59.455 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 98.2877ms
+2024-05-03 23:47:59.615 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/swagger/v1/swagger.json - -
+2024-05-03 23:47:59.911 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 295.8562ms
+2024-05-03 23:48:25.824 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-03 23:48:25.848 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-03 23:48:25.882 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-03 23:48:26.340 -07:00  INF  Executing action method Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) - Validation state: "Valid"
+2024-05-03 23:48:36.660 -07:00  INF  Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-03 23:48:51.972 -07:00  INF  Executed action method Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25623.2602ms.
+2024-05-03 23:48:51.989 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-03 23:48:52.014 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 26125.4894ms
+2024-05-03 23:48:52.014 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-03 23:48:52.028 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 26205.0260ms

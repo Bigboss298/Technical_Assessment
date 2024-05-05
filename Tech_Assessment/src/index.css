@@ -1,0 +1,8 @@
+body {
+  max-width: 100%;
+  max-width: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(247, 242, 242);
+}

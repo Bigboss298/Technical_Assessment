@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "UrITafxOpDvCgFu0nrYqFHc4W/CqpIBuLbpTDWGXXOc=",
+  "Source": "Technical Assessment API",
+  "BasePath": "_content/Technical Assessment API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Technical Assessment API\\wwwroot",
+      "Source": "Technical Assessment API",
+      "ContentRoot": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment API\\Technical Assessment API\\wwwroot\\",
+      "BasePath": "_content/Technical Assessment API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
