@@ -13,9 +13,17 @@ export default function HistoryPage() {
     const { data } = query;
     const { loading } = get;
 
-    if (loading) return <h1>Loading...</h1>;
+    if (loading) return (
+        <div className='historyTemplate'>
+            <h1>loading...</h1>
+        </div>
+    )
 
-    if (!data) return <h1>No query yet</h1>
+    if (!data || data.length === 0) return (
+        <div className='historyTemplate'>
+            <h1>No query yet</h1>
+        </div>
+    )
 
     return (
         <div className='historyTemplate'>

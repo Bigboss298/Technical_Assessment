@@ -35,8 +35,6 @@ namespace Technical_Assessment_API.Implementation.Services
 
             if (responseValue == "False")
             {
-                //var errorMessage = jObject["Error"].Value<string>();
-                //throw new Exception($"Error: {errorMessage}");
                 return null;
             }
 
@@ -60,7 +58,7 @@ namespace Technical_Assessment_API.Implementation.Services
 
             if (getAllQuery.Count() >= 5)
             {
-                var oldestQuery = getAllQuery.OrderBy(q => q.TimeStamp).First();
+                var oldestQuery = getAllQuery.Last();
                 _searchQueryRepository.Delete(oldestQuery);
             }
 
@@ -80,8 +78,6 @@ namespace Technical_Assessment_API.Implementation.Services
 
             if (responseValue == "False")
             {
-                //var errorMessage = jObject["Error"].Value<string>();
-                //throw new Exception($"Error: {errorMessage}");
                 return null;
             }
 

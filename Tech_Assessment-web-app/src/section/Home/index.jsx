@@ -1,7 +1,6 @@
 import SearchBox from './search';
 import '../../App.css';
 import SearchResult from './moviesTemplate';
-// import Results from '../../lib/result';
 import { useSearchs } from '../../Zustand/searchSlice';
 
 export default function HomePage() {

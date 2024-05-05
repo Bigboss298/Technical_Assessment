@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { create } from 'zustand';
 
+const BASE_URL = 'https://localhost:7272/api';
+
 export const useSearchs = create((set, get) => ({
     movie: {
         data: null,
@@ -24,7 +26,7 @@ export const useSearchs = create((set, get) => ({
    fetchMovie: async (title) => {
       get().get.setLoading(true);
       try {
-        const res = await axios.get(`https://localhost:7272/api/MovieSearch/Title?title=${title}`);
+        const res = await axios.get(`${BASE_URL}/MovieSearch/Title?title=${title}`);
 
         console.log(res.data);
         
@@ -41,7 +43,7 @@ export const useSearchs = create((set, get) => ({
    fetchSingleMovie: async (imdbID) => {
     get().get.setLoading(true);
         try {
-            const res = await axios.get(`https://localhost:7272/api/MovieSearch/imdbId?imdbId=${imdbID}`);
+            const res = await axios.get(`${BASE_URL}/MovieSearch/imdbId?imdbId=${imdbID}`);
             
             console.log(res.data);
 
@@ -56,7 +58,7 @@ export const useSearchs = create((set, get) => ({
    fetchQuery: async () => {
         get().get.setLoading(true);
     try {
-        const res = await axios.get(`https://localhost:7272/api/SearchQuery/Queries`);
+        const res = await axios.get(`${BASE_URL}/SearchQuery/Queries`);
         console.log(res.data);
 
         get().query.setQuery(res.data);

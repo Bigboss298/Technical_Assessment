@@ -1,0 +1,1162 @@
+2024-05-05 10:20:54.315 -07:00  INF  Now listening on: https://localhost:7272
+2024-05-05 10:20:54.371 -07:00  INF  Now listening on: http://localhost:5230
+2024-05-05 10:20:54.376 -07:00  INF  Application started. Press Ctrl+C to shut down.
+2024-05-05 10:20:54.377 -07:00  INF  Hosting environment: Development
+2024-05-05 10:20:54.377 -07:00  INF  Content root path: C:\Users\Abdullah\Desktop\Technical Assessment\Technical Assessment API\Technical Assessment API
+2024-05-05 10:20:55.425 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/swagger/index.html - -
+2024-05-05 10:20:56.036 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/_framework/aspnetcore-browser-refresh.js - -
+2024-05-05 10:20:56.041 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/swagger/index.html - - - 200 - text/html;charset=utf-8 621.3754ms
+2024-05-05 10:20:56.072 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 35.8329ms
+2024-05-05 10:20:56.115 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/_vs/browserLink - -
+2024-05-05 10:20:56.202 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.3372ms
+2024-05-05 10:20:56.403 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/swagger/v1/swagger.json - -
+2024-05-05 10:20:56.681 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.0365ms
+2024-05-05 10:21:05.255 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:21:05.267 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:21:05.301 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:21:07.006 -07:00  INF  Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:21:07.113 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:21:07.140 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 1829.1554ms
+2024-05-05 10:21:07.141 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:21:07.156 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 1901.0331ms
+2024-05-05 10:21:30.593 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:21:30.597 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:21:30.598 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:21:30.599 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:21:30.628 -07:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:21:30.631 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:21:30.631 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 32.8096ms
+2024-05-05 10:21:30.632 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:21:30.632 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 39.4207ms
+2024-05-05 10:21:30.634 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:21:30.636 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:21:30.637 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:21:30.637 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:21:30.749 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:21:30.750 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:21:30.750 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 113.5586ms
+2024-05-05 10:21:30.751 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:21:30.751 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 116.7469ms
+2024-05-05 10:22:09.236 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=Nigeria - -
+2024-05-05 10:22:09.237 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:22:09.237 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:22:09.253 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:22:09.313 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:22:09.478 -07:00  INF  Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 10:22:09.493 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=Nigeria&apikey=776a5d6f
+2024-05-05 10:22:09.494 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=Nigeria&apikey=776a5d6f
+2024-05-05 10:22:09.573 -07:00  ERR  An error occurred while fetching movie with titleSystem.Net.Http.HttpRequestException: No such host is known. (www.omdbapi.com:80)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Technical_Assessment_API.Implementation.Services.MovieSearchService.GetMovieWithTitle(String title) in C:\Users\Abdullah\Desktop\Technical Assessment\Technical Assessment API\Technical Assessment API\Implementation\Services\MovieSearchService.cs:line 74
+   at Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle(String title) in C:\Users\Abdullah\Desktop\Technical Assessment\Technical Assessment API\Technical Assessment API\Controllers\MovieSearchController.cs:line 23
+
+2024-05-05 10:22:09.583 -07:00  INF  Executing ObjectResult, writing value of type 'System.String'.
+2024-05-05 10:22:09.583 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 329.7779ms
+2024-05-05 10:22:09.583 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:22:09.584 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=Nigeria - - - 500 - text/plain;+charset=utf-8 347.4566ms
+2024-05-05 10:22:12.941 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:22:12.941 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:22:12.941 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:22:12.941 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:22:12.944 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:22:12.945 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:22:12.945 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.7322ms
+2024-05-05 10:22:12.945 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:22:12.945 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.5772ms
+2024-05-05 10:22:12.947 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:22:12.947 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:22:12.947 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:22:12.948 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:22:12.954 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:22:12.955 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:22:12.955 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 7.5376ms
+2024-05-05 10:22:12.955 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:22:12.955 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 8.4990ms
+2024-05-05 10:23:54.030 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:23:54.031 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:23:54.031 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:23:54.031 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:23:54.036 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:23:54.037 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:23:54.037 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.0689ms
+2024-05-05 10:23:54.037 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:23:54.037 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 7.2328ms
+2024-05-05 10:23:54.039 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:23:54.041 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:23:54.041 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:23:54.042 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:23:54.048 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:23:54.049 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:23:54.049 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.6492ms
+2024-05-05 10:23:54.049 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:23:54.050 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 10.2429ms
+2024-05-05 10:30:02.183 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=haven - -
+2024-05-05 10:30:02.185 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:30:02.185 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:02.185 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:30:02.228 -07:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:30:02.243 -07:00  INF  Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 10:30:02.244 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=haven&apikey=776a5d6f
+2024-05-05 10:30:02.244 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=haven&apikey=776a5d6f
+2024-05-05 10:30:03.263 -07:00  INF  Received HTTP response headers after 1012.0484ms - 200
+2024-05-05 10:30:03.263 -07:00  INF  End processing HTTP request after 1019.1134ms - 200
+2024-05-05 10:30:03.428 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:30:03.430 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 1244.7033ms
+2024-05-05 10:30:03.430 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:03.431 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=haven - - - 200 - application/json;+charset=utf-8 1247.3707ms
+2024-05-05 10:30:08.196 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1519931 - -
+2024-05-05 10:30:08.196 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:30:08.196 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:30:08.200 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:30:08.207 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt1519931&apikey=776a5d6f
+2024-05-05 10:30:08.207 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt1519931&apikey=776a5d6f
+2024-05-05 10:30:08.777 -07:00  INF  Received HTTP response headers after 570.2779ms - 200
+2024-05-05 10:30:08.777 -07:00  INF  End processing HTTP request after 570.7403ms - 200
+2024-05-05 10:30:08.807 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 10:30:08.823 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 622.4544ms
+2024-05-05 10:30:08.823 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:30:08.823 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1519931 - - - 200 - application/json;+charset=utf-8 627.6401ms
+2024-05-05 10:30:08.828 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1519931 - -
+2024-05-05 10:30:08.829 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:30:08.829 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:30:08.829 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:30:08.830 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt1519931&apikey=776a5d6f
+2024-05-05 10:30:08.830 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt1519931&apikey=776a5d6f
+2024-05-05 10:30:09.809 -07:00  INF  Received HTTP response headers after 978.7952ms - 200
+2024-05-05 10:30:09.810 -07:00  INF  End processing HTTP request after 979.3603ms - 200
+2024-05-05 10:30:09.811 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 10:30:09.812 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 982.462ms
+2024-05-05 10:30:09.812 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:30:09.813 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1519931 - - - 200 - application/json;+charset=utf-8 984.4604ms
+2024-05-05 10:30:29.760 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=guardian%20of%20the%20galaxy - -
+2024-05-05 10:30:29.760 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:30:29.760 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:29.760 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:30:29.770 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:30:29.787 -07:00  INF  Executed DbCommand (12ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 10:30:29.789 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=guardian%20of%20the%20galaxy&apikey=776a5d6f
+2024-05-05 10:30:29.790 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=guardian%20of%20the%20galaxy&apikey=776a5d6f
+2024-05-05 10:30:30.285 -07:00  INF  Received HTTP response headers after 494.9581ms - 200
+2024-05-05 10:30:30.285 -07:00  INF  End processing HTTP request after 497.2224ms - 200
+2024-05-05 10:30:30.286 -07:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-05 10:30:30.293 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 532.2124ms
+2024-05-05 10:30:30.293 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:30.293 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=guardian%20of%20the%20galaxy - - - 200 - application/json;+charset=utf-8 533.4506ms
+2024-05-05 10:30:37.113 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=guardian - -
+2024-05-05 10:30:37.113 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:30:37.113 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:37.113 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:30:37.119 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:30:37.128 -07:00  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 10:30:37.128 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=guardian&apikey=776a5d6f
+2024-05-05 10:30:37.129 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=guardian&apikey=776a5d6f
+2024-05-05 10:30:37.633 -07:00  INF  Received HTTP response headers after 504.5359ms - 200
+2024-05-05 10:30:37.633 -07:00  INF  End processing HTTP request after 504.9191ms - 200
+2024-05-05 10:30:37.634 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:30:37.635 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 521.4173ms
+2024-05-05 10:30:37.635 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:37.635 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=guardian - - - 200 - application/json;+charset=utf-8 522.4630ms
+2024-05-05 10:30:57.419 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=guardian%20of%20the%20galaxy%20vol%202 - -
+2024-05-05 10:30:57.419 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:30:57.420 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:57.420 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:30:57.425 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:30:57.432 -07:00  INF  Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 10:30:57.432 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=guardian%20of%20the%20galaxy%20vol%202&apikey=776a5d6f
+2024-05-05 10:30:57.432 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=guardian%20of%20the%20galaxy%20vol%202&apikey=776a5d6f
+2024-05-05 10:30:57.929 -07:00  INF  Received HTTP response headers after 496.7564ms - 200
+2024-05-05 10:30:57.929 -07:00  INF  End processing HTTP request after 497.1891ms - 200
+2024-05-05 10:30:57.930 -07:00  INF  Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-05-05 10:30:57.930 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 509.9708ms
+2024-05-05 10:30:57.930 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:30:57.931 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=guardian%20of%20the%20galaxy%20vol%202 - - - 200 - application/json;+charset=utf-8 511.9404ms
+2024-05-05 10:39:32.840 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:39:32.841 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:39:32.841 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:39:32.841 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:39:32.886 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:39:32.887 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:39:32.887 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 45.6891ms
+2024-05-05 10:39:32.887 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:39:32.887 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 47.2389ms
+2024-05-05 10:39:32.889 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:39:32.890 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:39:32.890 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:39:32.890 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:39:32.894 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:39:32.895 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:39:32.895 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.8985ms
+2024-05-05 10:39:32.895 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:39:32.895 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 5.9788ms
+2024-05-05 10:41:46.978 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:46.980 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:46.980 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:46.980 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:46.985 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:46.986 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:46.989 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 7.5267ms
+2024-05-05 10:41:46.990 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:46.990 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 15.2081ms
+2024-05-05 10:41:46.993 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:46.994 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:46.994 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:46.994 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:46.999 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:47.000 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:47.000 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.4238ms
+2024-05-05 10:41:47.000 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:47.000 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.9042ms
+2024-05-05 10:41:48.455 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:48.455 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:48.455 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:48.455 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:48.461 -07:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:48.461 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:48.462 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.9573ms
+2024-05-05 10:41:48.463 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:48.463 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 8.2803ms
+2024-05-05 10:41:48.465 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:48.465 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:48.465 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:48.465 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:48.478 -07:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:48.480 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:48.480 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 13.8959ms
+2024-05-05 10:41:48.480 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:48.480 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 15.5062ms
+2024-05-05 10:41:53.255 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:53.256 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:53.256 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:53.256 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:53.259 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:53.259 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:53.259 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 2.9565ms
+2024-05-05 10:41:53.259 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:53.259 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.7446ms
+2024-05-05 10:41:53.261 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:53.261 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:53.261 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:53.262 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:53.269 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:53.270 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:53.270 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 8.0942ms
+2024-05-05 10:41:53.270 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:53.270 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 9.2452ms
+2024-05-05 10:41:56.040 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:56.040 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:56.040 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:56.040 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:56.043 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:56.043 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:56.044 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.2656ms
+2024-05-05 10:41:56.044 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:56.044 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 3.9686ms
+2024-05-05 10:41:56.045 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:41:56.046 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:41:56.046 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:56.048 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:41:56.053 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:41:56.054 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:41:56.054 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.4371ms
+2024-05-05 10:41:56.054 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:41:56.054 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 8.9451ms
+2024-05-05 10:42:02.078 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:42:02.079 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:42:02.079 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:42:02.079 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:42:02.083 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:42:02.083 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:42:02.083 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.2812ms
+2024-05-05 10:42:02.083 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:42:02.084 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 5.1209ms
+2024-05-05 10:42:02.085 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:42:02.085 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:42:02.085 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:42:02.085 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:42:02.089 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:42:02.089 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:42:02.089 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.1962ms
+2024-05-05 10:42:02.089 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:42:02.090 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.9682ms
+2024-05-05 10:45:29.647 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:45:29.648 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:45:29.649 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:45:29.649 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:45:29.664 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:45:29.665 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:45:29.666 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 16.5326ms
+2024-05-05 10:45:29.666 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:45:29.666 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 18.4113ms
+2024-05-05 10:45:29.670 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:45:29.670 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:45:29.670 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:45:29.671 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:45:29.681 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:45:29.683 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:45:29.686 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 15.0275ms
+2024-05-05 10:45:29.686 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:45:29.686 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 16.4705ms
+2024-05-05 10:48:39.517 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:48:39.519 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:48:39.519 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:48:39.520 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:48:39.526 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:48:39.529 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:48:39.529 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 9.4395ms
+2024-05-05 10:48:39.530 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:48:39.530 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 12.3068ms
+2024-05-05 10:48:39.531 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:48:39.531 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:48:39.532 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:48:39.532 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:48:39.536 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:48:39.537 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:48:39.537 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.8892ms
+2024-05-05 10:48:39.537 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:48:39.537 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.0248ms
+2024-05-05 10:49:11.161 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:11.165 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:11.165 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:11.165 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:11.170 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:11.170 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:11.170 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.0598ms
+2024-05-05 10:49:11.171 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:11.171 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 9.6411ms
+2024-05-05 10:49:13.122 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:13.123 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:13.123 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:13.123 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:13.127 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:13.128 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:13.128 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.9545ms
+2024-05-05 10:49:13.128 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:13.128 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.2291ms
+2024-05-05 10:49:21.128 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:21.128 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:21.129 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:21.129 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:21.135 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:21.136 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:21.136 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.8914ms
+2024-05-05 10:49:21.136 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:21.136 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 8.1151ms
+2024-05-05 10:49:24.748 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:24.748 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:24.749 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:24.750 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:24.755 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:24.755 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:24.755 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.5241ms
+2024-05-05 10:49:24.756 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:24.757 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 7.5918ms
+2024-05-05 10:49:24.763 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:24.763 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:24.764 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:24.764 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:24.768 -07:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:24.769 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:24.769 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.0819ms
+2024-05-05 10:49:24.769 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:24.769 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.4109ms
+2024-05-05 10:49:25.831 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:25.831 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:25.831 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:25.831 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:25.837 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:25.838 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:25.838 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.3647ms
+2024-05-05 10:49:25.838 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:25.838 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.9868ms
+2024-05-05 10:49:25.841 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:25.844 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:25.844 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:25.845 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:25.850 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:25.850 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:25.850 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.2439ms
+2024-05-05 10:49:25.851 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:25.852 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 10.5225ms
+2024-05-05 10:49:27.335 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:27.336 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:27.336 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:27.336 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:27.346 -07:00  INF  Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:27.347 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:27.347 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 10.2916ms
+2024-05-05 10:49:27.347 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:27.347 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 12.3268ms
+2024-05-05 10:49:27.349 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:27.349 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:27.350 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:27.350 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:27.358 -07:00  INF  Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:27.360 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:27.361 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 10.744ms
+2024-05-05 10:49:27.361 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:27.361 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 12.0128ms
+2024-05-05 10:49:28.297 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:28.298 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:28.298 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:28.299 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:28.305 -07:00  INF  Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:28.307 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:28.307 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 7.9326ms
+2024-05-05 10:49:28.307 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:28.307 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 9.8158ms
+2024-05-05 10:49:28.309 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:28.309 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:28.309 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:28.310 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:28.315 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:28.316 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:28.316 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.115ms
+2024-05-05 10:49:28.316 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:28.319 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 8.9273ms
+2024-05-05 10:49:29.214 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:29.214 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:29.214 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:29.214 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:29.219 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:29.219 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:29.219 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.0576ms
+2024-05-05 10:49:29.219 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:29.220 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.5402ms
+2024-05-05 10:49:29.227 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:49:29.227 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:29.228 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:29.228 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:49:29.233 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:29.233 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:29.233 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.2335ms
+2024-05-05 10:49:29.233 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:49:29.233 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.8497ms
+2024-05-05 10:49:38.084 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=Nigeria - -
+2024-05-05 10:49:38.084 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:38.084 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:49:38.084 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:49:38.092 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:49:38.113 -07:00  INF  Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p0, @p1, @p2);
+2024-05-05 10:49:38.127 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=Nigeria&apikey=776a5d6f
+2024-05-05 10:49:38.128 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=Nigeria&apikey=776a5d6f
+2024-05-05 10:49:41.234 -07:00  INF  Received HTTP response headers after 3106.6106ms - 200
+2024-05-05 10:49:41.234 -07:00  INF  End processing HTTP request after 3107.0303ms - 200
+2024-05-05 10:49:41.236 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:49:41.236 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 3151.8137ms
+2024-05-05 10:49:41.236 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:49:41.237 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=Nigeria - - - 200 - application/json;+charset=utf-8 3152.7945ms
+2024-05-05 10:49:46.348 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt11405502 - -
+2024-05-05 10:49:46.349 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:46.349 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:49:46.349 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:49:46.350 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt11405502&apikey=776a5d6f
+2024-05-05 10:49:46.351 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt11405502&apikey=776a5d6f
+2024-05-05 10:49:47.063 -07:00  INF  Received HTTP response headers after 712.6295ms - 200
+2024-05-05 10:49:47.064 -07:00  INF  End processing HTTP request after 713.0974ms - 200
+2024-05-05 10:49:47.064 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 10:49:47.064 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 715.6664ms
+2024-05-05 10:49:47.065 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:49:47.065 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt11405502 - - - 200 - application/json;+charset=utf-8 716.3680ms
+2024-05-05 10:49:47.069 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt11405502 - -
+2024-05-05 10:49:47.070 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:49:47.070 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:49:47.070 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:49:47.072 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt11405502&apikey=776a5d6f
+2024-05-05 10:49:47.072 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt11405502&apikey=776a5d6f
+2024-05-05 10:49:47.371 -07:00  INF  Received HTTP response headers after 298.2821ms - 200
+2024-05-05 10:49:47.371 -07:00  INF  End processing HTTP request after 299.2866ms - 200
+2024-05-05 10:49:47.372 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 10:49:47.372 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 301.7851ms
+2024-05-05 10:49:47.373 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:49:47.373 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt11405502 - - - 200 - application/json;+charset=utf-8 304.0194ms
+2024-05-05 10:50:10.244 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:50:10.244 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:50:10.244 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:50:10.244 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:50:10.247 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:50:10.249 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:50:10.249 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.7617ms
+2024-05-05 10:50:10.249 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:50:10.249 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 5.5318ms
+2024-05-05 10:50:10.250 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 10:50:10.251 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:50:10.251 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:50:10.251 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 10:50:10.254 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:50:10.254 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:50:10.255 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.6648ms
+2024-05-05 10:50:10.255 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 10:50:10.255 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.3596ms
+2024-05-05 10:51:20.396 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=k2 - -
+2024-05-05 10:51:20.396 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:51:20.396 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:51:20.397 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:51:20.406 -07:00  INF  Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 10:51:20.413 -07:00  INF  Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p0, @p1, @p2);
+2024-05-05 10:51:20.419 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=k2&apikey=776a5d6f
+2024-05-05 10:51:20.419 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=k2&apikey=776a5d6f
+2024-05-05 10:51:21.171 -07:00  INF  Received HTTP response headers after 751.2949ms - 200
+2024-05-05 10:51:21.171 -07:00  INF  End processing HTTP request after 751.9989ms - 200
+2024-05-05 10:51:21.173 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 10:51:21.174 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 777.1231ms
+2024-05-05 10:51:21.176 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 10:51:21.177 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=k2 - - - 200 - application/json;+charset=utf-8 781.1158ms
+2024-05-05 10:53:48.437 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0102178 - -
+2024-05-05 10:53:48.437 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:53:48.437 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:53:48.437 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:53:48.438 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0102178&apikey=776a5d6f
+2024-05-05 10:53:48.438 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0102178&apikey=776a5d6f
+2024-05-05 10:53:50.195 -07:00  INF  Received HTTP response headers after 1756.0754ms - 200
+2024-05-05 10:53:50.195 -07:00  INF  End processing HTTP request after 1756.9281ms - 200
+2024-05-05 10:53:50.196 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 10:53:50.196 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 1758.7166ms
+2024-05-05 10:53:50.196 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:53:50.197 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0102178 - - - 200 - application/json;+charset=utf-8 1759.7340ms
+2024-05-05 10:53:50.205 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0102178 - -
+2024-05-05 10:53:50.205 -07:00  INF  CORS policy execution successful.
+2024-05-05 10:53:50.206 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:53:50.207 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 10:53:50.209 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0102178&apikey=776a5d6f
+2024-05-05 10:53:50.210 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0102178&apikey=776a5d6f
+2024-05-05 10:53:50.495 -07:00  INF  Received HTTP response headers after 285.0708ms - 200
+2024-05-05 10:53:50.495 -07:00  INF  End processing HTTP request after 286.0337ms - 200
+2024-05-05 10:53:50.496 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 10:53:50.496 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 288.9569ms
+2024-05-05 10:53:50.497 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 10:53:50.497 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0102178 - - - 200 - application/json;+charset=utf-8 292.3781ms
+2024-05-05 11:10:21.424 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=god - -
+2024-05-05 11:10:21.425 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:10:21.425 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:10:21.425 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:10:21.463 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:10:21.466 -07:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p0, @p1, @p2);
+2024-05-05 11:10:21.469 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=god&apikey=776a5d6f
+2024-05-05 11:10:21.469 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=god&apikey=776a5d6f
+2024-05-05 11:10:22.548 -07:00  INF  Received HTTP response headers after 1079.3748ms - 200
+2024-05-05 11:10:22.548 -07:00  INF  End processing HTTP request after 1079.7965ms - 200
+2024-05-05 11:10:22.549 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:10:22.550 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 1124.5788ms
+2024-05-05 11:10:22.550 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:10:22.550 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=god - - - 200 - application/json;+charset=utf-8 1125.6967ms
+2024-05-05 11:10:25.953 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - -
+2024-05-05 11:10:25.953 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:10:25.953 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:10:25.953 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:10:25.954 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:10:25.954 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:10:26.549 -07:00  INF  Received HTTP response headers after 594.6821ms - 200
+2024-05-05 11:10:26.549 -07:00  INF  End processing HTTP request after 595.1229ms - 200
+2024-05-05 11:10:26.550 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:10:26.550 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 596.4422ms
+2024-05-05 11:10:26.550 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:10:26.551 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - - - 200 - application/json;+charset=utf-8 597.2758ms
+2024-05-05 11:10:26.555 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - -
+2024-05-05 11:10:26.555 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:10:26.556 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:10:26.556 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:10:26.558 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:10:26.558 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:10:26.833 -07:00  INF  Received HTTP response headers after 273.9338ms - 200
+2024-05-05 11:10:26.833 -07:00  INF  End processing HTTP request after 274.752ms - 200
+2024-05-05 11:10:26.834 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:10:26.834 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 277.9545ms
+2024-05-05 11:10:26.834 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:10:26.834 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - - - 200 - application/json;+charset=utf-8 279.4172ms
+2024-05-05 11:11:05.835 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:11:05.836 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:11:05.836 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:05.836 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:11:05.839 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:11:05.840 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:11:05.840 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.8766ms
+2024-05-05 11:11:05.840 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:05.840 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.4201ms
+2024-05-05 11:11:05.841 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:11:05.841 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:11:05.841 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:05.841 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:11:05.845 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:11:05.845 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:11:05.845 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.7473ms
+2024-05-05 11:11:05.845 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:05.845 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.3449ms
+2024-05-05 11:11:46.066 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:11:46.066 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:11:46.066 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:46.066 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:11:46.070 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:11:46.070 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:11:46.070 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.0871ms
+2024-05-05 11:11:46.070 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:46.071 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.7574ms
+2024-05-05 11:11:46.072 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:11:46.072 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:11:46.072 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:46.072 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:11:46.075 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:11:46.075 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:11:46.075 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.3325ms
+2024-05-05 11:11:46.075 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:11:46.076 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 3.9379ms
+2024-05-05 11:14:26.137 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:14:26.138 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:14:26.138 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:14:26.138 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:14:26.141 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:14:26.141 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:14:26.141 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.1468ms
+2024-05-05 11:14:26.141 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:14:26.141 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 3.7761ms
+2024-05-05 11:14:26.143 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:14:26.143 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:14:26.143 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:14:26.143 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:14:26.150 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:14:26.150 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:14:26.150 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 6.3974ms
+2024-05-05 11:14:26.150 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:14:26.150 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 7.3445ms
+2024-05-05 11:17:30.377 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - -
+2024-05-05 11:17:30.377 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:17:30.377 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:17:30.382 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:17:30.383 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:17:30.383 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:17:32.671 -07:00  INF  Received HTTP response headers after 2288.4187ms - 200
+2024-05-05 11:17:32.672 -07:00  INF  End processing HTTP request after 2288.8202ms - 200
+2024-05-05 11:17:32.672 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:17:32.681 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 2298.8006ms
+2024-05-05 11:17:32.681 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:17:32.682 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - - - 200 - application/json;+charset=utf-8 2304.6740ms
+2024-05-05 11:17:32.687 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - -
+2024-05-05 11:17:32.697 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:17:32.697 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:17:32.698 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:17:32.698 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:17:32.699 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0317248&apikey=776a5d6f
+2024-05-05 11:17:32.989 -07:00  INF  Received HTTP response headers after 290.3366ms - 200
+2024-05-05 11:17:32.989 -07:00  INF  End processing HTTP request after 291.0046ms - 200
+2024-05-05 11:17:32.990 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:17:32.990 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 292.152ms
+2024-05-05 11:17:32.990 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:17:32.990 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0317248 - - - 200 - application/json;+charset=utf-8 303.2598ms
+2024-05-05 11:23:01.582 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:23:01.582 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:23:01.582 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:01.590 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:23:01.630 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:23:01.630 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:23:01.632 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 41.2673ms
+2024-05-05 11:23:01.632 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:01.632 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 50.1632ms
+2024-05-05 11:23:01.633 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:23:01.634 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:23:01.634 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:01.634 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:23:01.639 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp`
+2024-05-05 11:23:01.639 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:23:01.639 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.2701ms
+2024-05-05 11:23:01.639 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:01.640 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.1633ms
+2024-05-05 11:23:15.489 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:23:15.495 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:23:15.495 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:15.513 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:23:15.553 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:23:15.554 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:23:15.556 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 42.7494ms
+2024-05-05 11:23:15.556 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:15.557 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 67.2825ms
+2024-05-05 11:23:15.560 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:23:15.563 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:23:15.563 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:15.564 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:23:15.568 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:23:15.568 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:23:15.568 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.5417ms
+2024-05-05 11:23:15.569 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:23:15.569 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 8.6058ms
+2024-05-05 11:27:35.584 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=merlin - -
+2024-05-05 11:27:35.585 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:27:35.585 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:27:35.591 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:27:35.598 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:27:35.603 -07:00  INF  Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p0, @p1, @p2);
+2024-05-05 11:27:35.611 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=merlin&apikey=776a5d6f
+2024-05-05 11:27:35.611 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=merlin&apikey=776a5d6f
+2024-05-05 11:27:37.050 -07:00  INF  Received HTTP response headers after 1438.682ms - 200
+2024-05-05 11:27:37.050 -07:00  INF  End processing HTTP request after 1439.2728ms - 200
+2024-05-05 11:27:37.052 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:27:37.057 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 1466.259ms
+2024-05-05 11:27:37.058 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:27:37.058 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=merlin - - - 200 - application/json;+charset=utf-8 1473.6234ms
+2024-05-05 11:27:38.749 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1199099 - -
+2024-05-05 11:27:38.750 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:27:38.750 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:27:38.754 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:27:38.755 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt1199099&apikey=776a5d6f
+2024-05-05 11:27:38.755 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt1199099&apikey=776a5d6f
+2024-05-05 11:27:39.257 -07:00  INF  Received HTTP response headers after 501.8443ms - 200
+2024-05-05 11:27:39.257 -07:00  INF  End processing HTTP request after 502.3383ms - 200
+2024-05-05 11:27:39.260 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:27:39.283 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 528.9635ms
+2024-05-05 11:27:39.283 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:27:39.284 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1199099 - - - 200 - application/json;+charset=utf-8 534.9805ms
+2024-05-05 11:27:39.296 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1199099 - -
+2024-05-05 11:27:39.297 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:27:39.299 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:27:39.299 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:27:39.302 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt1199099&apikey=776a5d6f
+2024-05-05 11:27:39.302 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt1199099&apikey=776a5d6f
+2024-05-05 11:27:39.557 -07:00  INF  Received HTTP response headers after 255.3638ms - 200
+2024-05-05 11:27:39.559 -07:00  INF  End processing HTTP request after 256.8083ms - 200
+2024-05-05 11:27:39.564 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:27:39.564 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 264.0608ms
+2024-05-05 11:27:39.564 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:27:39.564 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt1199099 - - - 200 - application/json;+charset=utf-8 268.7574ms
+2024-05-05 11:28:33.346 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:28:33.346 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:33.348 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:33.356 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:28:33.359 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:28:33.360 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:28:33.362 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 5.2651ms
+2024-05-05 11:28:33.362 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:33.362 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 15.5886ms
+2024-05-05 11:28:33.367 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:28:33.367 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:33.367 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:33.367 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:28:33.371 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:28:33.372 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:28:33.372 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.7378ms
+2024-05-05 11:28:33.372 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:33.373 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 5.7249ms
+2024-05-05 11:28:41.480 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=seeker - -
+2024-05-05 11:28:41.481 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:41.481 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:28:41.481 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:28:41.485 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:28:41.490 -07:00  INF  Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p0, @p1, @p2);
+2024-05-05 11:28:41.493 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=seeker&apikey=776a5d6f
+2024-05-05 11:28:41.493 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=seeker&apikey=776a5d6f
+2024-05-05 11:28:42.471 -07:00  INF  Received HTTP response headers after 978.2071ms - 200
+2024-05-05 11:28:42.471 -07:00  INF  End processing HTTP request after 978.6487ms - 200
+2024-05-05 11:28:42.472 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:28:42.472 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 991.107ms
+2024-05-05 11:28:42.472 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:28:42.472 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=seeker - - - 200 - application/json;+charset=utf-8 991.9396ms
+2024-05-05 11:28:44.711 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0976213 - -
+2024-05-05 11:28:44.711 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:44.711 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:28:44.711 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:28:44.711 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0976213&apikey=776a5d6f
+2024-05-05 11:28:44.712 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0976213&apikey=776a5d6f
+2024-05-05 11:28:45.088 -07:00  INF  Received HTTP response headers after 376.2922ms - 200
+2024-05-05 11:28:45.088 -07:00  INF  End processing HTTP request after 376.6314ms - 200
+2024-05-05 11:28:45.089 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:28:45.089 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 377.6824ms
+2024-05-05 11:28:45.089 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:28:45.090 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0976213 - - - 200 - application/json;+charset=utf-8 378.5333ms
+2024-05-05 11:28:45.094 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0976213 - -
+2024-05-05 11:28:45.095 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:45.095 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:28:45.095 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:28:45.098 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0976213&apikey=776a5d6f
+2024-05-05 11:28:45.098 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0976213&apikey=776a5d6f
+2024-05-05 11:28:45.358 -07:00  INF  Received HTTP response headers after 260.0637ms - 200
+2024-05-05 11:28:45.358 -07:00  INF  End processing HTTP request after 261.0105ms - 200
+2024-05-05 11:28:45.359 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:28:45.359 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 264.0306ms
+2024-05-05 11:28:45.359 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:28:45.360 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0976213 - - - 200 - application/json;+charset=utf-8 265.7291ms
+2024-05-05 11:28:59.847 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:28:59.848 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:59.848 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:59.848 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:28:59.850 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:28:59.851 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:28:59.851 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 2.9539ms
+2024-05-05 11:28:59.851 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:59.851 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 3.7811ms
+2024-05-05 11:28:59.852 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:28:59.853 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:28:59.853 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:59.853 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:28:59.856 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:28:59.857 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:28:59.857 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.9123ms
+2024-05-05 11:28:59.857 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:28:59.857 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 4.6066ms
+2024-05-05 11:29:14.324 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=The%20Heirs - -
+2024-05-05 11:29:14.324 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:29:14.324 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:29:14.324 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:29:14.331 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:29:14.339 -07:00  INF  Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 11:29:14.340 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=The%20Heirs&apikey=776a5d6f
+2024-05-05 11:29:14.340 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=The%20Heirs&apikey=776a5d6f
+2024-05-05 11:29:14.850 -07:00  INF  Received HTTP response headers after 510.051ms - 200
+2024-05-05 11:29:14.850 -07:00  INF  End processing HTTP request after 510.4876ms - 200
+2024-05-05 11:29:14.851 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:29:14.851 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 526.3969ms
+2024-05-05 11:29:14.851 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:29:14.851 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=The%20Heirs - - - 200 - application/json;+charset=utf-8 527.2676ms
+2024-05-05 11:29:16.929 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt2903370 - -
+2024-05-05 11:29:16.929 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:29:16.929 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:29:16.930 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:29:16.933 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt2903370&apikey=776a5d6f
+2024-05-05 11:29:16.933 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt2903370&apikey=776a5d6f
+2024-05-05 11:29:17.511 -07:00  INF  Received HTTP response headers after 577.7182ms - 200
+2024-05-05 11:29:17.511 -07:00  INF  End processing HTTP request after 578.3796ms - 200
+2024-05-05 11:29:17.512 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:29:17.512 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 582.2866ms
+2024-05-05 11:29:17.512 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:29:17.512 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt2903370 - - - 200 - application/json;+charset=utf-8 583.3643ms
+2024-05-05 11:29:17.517 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt2903370 - -
+2024-05-05 11:29:17.518 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:29:17.518 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:29:17.518 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:29:17.521 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt2903370&apikey=776a5d6f
+2024-05-05 11:29:17.521 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt2903370&apikey=776a5d6f
+2024-05-05 11:29:17.787 -07:00  INF  Received HTTP response headers after 266.4172ms - 200
+2024-05-05 11:29:17.788 -07:00  INF  End processing HTTP request after 267.1049ms - 200
+2024-05-05 11:29:17.788 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:29:17.788 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 270.106ms
+2024-05-05 11:29:17.789 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:29:17.789 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt2903370 - - - 200 - application/json;+charset=utf-8 271.5288ms
+2024-05-05 11:30:03.323 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:30:03.323 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:30:03.323 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:30:03.323 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:30:03.326 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:30:03.326 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:30:03.327 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 3.1095ms
+2024-05-05 11:30:03.327 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:30:03.327 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 3.7032ms
+2024-05-05 11:30:03.329 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:30:03.330 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:30:03.331 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:30:03.331 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:30:03.335 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:30:03.335 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:30:03.335 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.1765ms
+2024-05-05 11:30:03.336 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:30:03.336 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 6.4028ms
+2024-05-05 11:31:17.044 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=city%20Hunter - -
+2024-05-05 11:31:17.044 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:31:17.044 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:31:17.051 -07:00  INF  Route matched with {action = "GetMovieWithTitle", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMovieWithTitle(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:31:17.058 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:31:17.067 -07:00  INF  Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 255), @p1='?' (Size = 255), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM `searchQueries`
+WHERE `Id` = @p0;
+INSERT INTO `searchQueries` (`Id`, `SearchParam`, `TimeStamp`)
+VALUES (@p1, @p2, @p3);
+2024-05-05 11:31:17.068 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?t=city%20Hunter&apikey=776a5d6f
+2024-05-05 11:31:17.068 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?t=city%20Hunter&apikey=776a5d6f
+2024-05-05 11:31:17.827 -07:00  INF  Received HTTP response headers after 759.1637ms - 200
+2024-05-05 11:31:17.827 -07:00  INF  End processing HTTP request after 759.6891ms - 200
+2024-05-05 11:31:17.828 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.Dto.MovieByTitleDto, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:31:17.833 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API) in 782.0775ms
+2024-05-05 11:31:17.833 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetMovieWithTitle (Technical Assessment API)'
+2024-05-05 11:31:17.834 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/Title?title=city%20Hunter - - - 200 - application/json;+charset=utf-8 789.6428ms
+2024-05-05 11:31:27.876 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0103950 - -
+2024-05-05 11:31:27.884 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:31:27.885 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:31:27.891 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:31:27.891 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0103950&apikey=776a5d6f
+2024-05-05 11:31:27.891 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0103950&apikey=776a5d6f
+2024-05-05 11:31:28.396 -07:00  INF  Received HTTP response headers after 504.6658ms - 200
+2024-05-05 11:31:28.396 -07:00  INF  End processing HTTP request after 505.1258ms - 200
+2024-05-05 11:31:28.397 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:31:28.405 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 514.4454ms
+2024-05-05 11:31:28.405 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:31:28.406 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0103950 - - - 200 - application/json;+charset=utf-8 529.3019ms
+2024-05-05 11:31:28.410 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0103950 - -
+2024-05-05 11:31:28.411 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:31:28.411 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:31:28.411 -07:00  INF  Route matched with {action = "GetFullDetailOfMovie", controller = "MovieSearch"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetFullDetailOfMovie(System.String) on controller Technical_Assessment_API.Controllers.MovieSearchController (Technical Assessment API).
+2024-05-05 11:31:28.413 -07:00  INF  Start processing HTTP request GET http://www.omdbapi.com/?i=tt0103950&apikey=776a5d6f
+2024-05-05 11:31:28.413 -07:00  INF  Sending HTTP request GET http://www.omdbapi.com/?i=tt0103950&apikey=776a5d6f
+2024-05-05 11:31:28.694 -07:00  INF  Received HTTP response headers after 280.5411ms - 200
+2024-05-05 11:31:28.694 -07:00  INF  End processing HTTP request after 281.3973ms - 200
+2024-05-05 11:31:28.695 -07:00  INF  Executing OkObjectResult, writing value of type 'Technical_Assessment_API.Model.Dto.DetailedMovieDto'.
+2024-05-05 11:31:28.695 -07:00  INF  Executed action Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API) in 283.3913ms
+2024-05-05 11:31:28.695 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.MovieSearchController.GetFullDetailOfMovie (Technical Assessment API)'
+2024-05-05 11:31:28.695 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/MovieSearch/imdbId?imdbId=tt0103950 - - - 200 - application/json;+charset=utf-8 284.9312ms
+2024-05-05 11:31:51.659 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:31:51.659 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:31:51.659 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:31:51.667 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:31:51.670 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:31:51.670 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:31:51.671 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.3641ms
+2024-05-05 11:31:51.671 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:31:51.672 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 12.8215ms
+2024-05-05 11:31:51.674 -07:00  INF  Request starting HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - -
+2024-05-05 11:31:51.675 -07:00  INF  CORS policy execution successful.
+2024-05-05 11:31:51.675 -07:00  INF  Executing endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:31:51.675 -07:00  INF  Route matched with {action = "GetQueries", controller = "SearchQuery"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetQueries() on controller Technical_Assessment_API.Controllers.SearchQueryController (Technical Assessment API).
+2024-05-05 11:31:51.678 -07:00  INF  Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`SearchParam`, `s`.`TimeStamp`
+FROM `searchQueries` AS `s`
+ORDER BY `s`.`TimeStamp` DESC
+2024-05-05 11:31:51.679 -07:00  INF  Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Technical_Assessment_API.Model.SearchQuery, Technical Assessment API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-05 11:31:51.679 -07:00  INF  Executed action Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API) in 4.2848ms
+2024-05-05 11:31:51.679 -07:00  INF  Executed endpoint 'Technical_Assessment_API.Controllers.SearchQueryController.GetQueries (Technical Assessment API)'
+2024-05-05 11:31:51.679 -07:00  INF  Request finished HTTP/2 GET https://localhost:7272/api/SearchQuery/Queries - - - 200 - application/json;+charset=utf-8 5.0389ms

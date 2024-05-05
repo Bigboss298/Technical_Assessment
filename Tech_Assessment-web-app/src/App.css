@@ -1,7 +1,46 @@
+/* **************************** Navbar ************************ */
+.nav{
+  width: 100vw;
+  height: 7vh;
+  background-color: red;
+  display: flex;
+  place-content: center;
+  place-content: space-between;
+}
+.brand{
+  max-height: 7vh;
+  max-width: 20vw;
+  padding-left: 30px;
+  cursor: pointer;
+  place-items: center;
+  place-content: center;
+}
+.brandName{
+  font-weight: 900;
+  font-size: 30px;
+  color: #ffffff;
+
+}
+ul{
+  width: 30vw;
+  display: flex;
+  place-content: center;
+  align-items: center;
+  gap: 50px;
+ 
+}
+.link{
+  text-decoration: none;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* /////////////////////////////////////////////////////////// * /
+
+/* ************************** Home ************************* */
 .searchBox{
   width: 100vw;
   height: 15vh;
-  /* background-color: blue; */
   display: flex;
   place-items: center;
   place-content: center;
@@ -47,42 +86,10 @@
   display: flex;
   gap: 30px;
 }
-.nav{
-  width: 100vw;
-  height: 7vh;
-  background-color: red;
-  display: flex;
-  place-content: center;
-  place-content: space-between;
-}
-.brand{
-  max-height: 7vh;
-  max-width: 20vw;
-  padding-left: 30px;
-  cursor: pointer;
-  place-items: center;
-  place-content: center;
-}
-.brandName{
-  font-weight: 900;
-  font-size: 30px;
-  color: #ffffff;
+/* //////////////////////////////////////////////////////////////// */
 
-}
-ul{
-  width: 30vw;
-  display: flex;
-  place-content: center;
-  align-items: center;
-  gap: 50px;
- 
-}
-.link{
-  text-decoration: none;
-  font-weight: 900;
-  color: #ffffff;
-  cursor: pointer;
-}
+
+/* ***************************** History **************************** */
 .history{
   display: flex;
   place-content: space-between;
@@ -110,6 +117,10 @@ ul{
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
+/* ////////////////////////////////////////////////////////////////////// */
+
+
+/* ******************************** Single Movie ************************ */
 .singleMovie{
   width: 100vw;
   height: 100vh;
@@ -142,7 +153,9 @@ ul{
   place-content: center;
   place-items: center
 }
+/* ////////////////////////////////////////////////////////////////////////////// */
 
+/* ******************************* Mobile Devices ******************************* */
 @media (max-width: 767px) {
   ul{
     width: 50vw;
@@ -150,10 +163,13 @@ ul{
   .brandName{
     font-size: large;
   }
+  .subMovieCard{
+    gap: 20px;
+    font-size: smaller;
+  }
   .searchInput{
     width: 50%;
     height: 2.5em;
-    /* margin-right: 5px; */
   }
   .submitButton{
     width: 25%;
@@ -171,6 +187,7 @@ ul{
     height: fit-content;
   }
   .singleText{
+    margin-top: 10px;
     width: 100%;
     height: 350px;
     overflow: scroll;

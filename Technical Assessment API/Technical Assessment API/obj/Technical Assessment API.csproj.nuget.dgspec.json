@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Abdullah\\Desktop\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj": {}
+    "C:\\Users\\Abdullah\\Desktop\\Technical Assessment\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Abdullah\\Desktop\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj": {
+    "C:\\Users\\Abdullah\\Desktop\\Technical Assessment\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj",
+        "projectUniqueName": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj",
         "projectName": "Technical Assessment API",
-        "projectPath": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj",
+        "projectPath": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment\\Technical Assessment API\\Technical Assessment API\\Technical Assessment API.csproj",
         "packagesPath": "C:\\Users\\Abdullah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment API\\Technical Assessment API\\obj\\",
+        "outputPath": "C:\\Users\\Abdullah\\Desktop\\Technical Assessment\\Technical Assessment API\\Technical Assessment API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Abdullah\\AppData\\Roaming\\NuGet\\NuGet.Config",
